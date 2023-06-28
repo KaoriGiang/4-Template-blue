@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #22b8cf;
+  font-size: 3rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+h2,
+p,
+.percentage {
+  color: #1098ad;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+h3 {
+  color: #22b8cf;
+  font-weight: 600;
+  text-align: 4px;
+  opacity: 0.8;
+}
+main {
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #1864ab, #d0ebff);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.135),
+    rgba(255, 255, 255, 0.526)
+  );
+  border-radius: 2rem;
+
+  z-index: 3;
+  backdrop-filter: blur(10rem); /* lớp màu đằng sau ẩn ra lớp ngoài **/
+
+  display: flex;
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    rgba(225, 225, 225, 0.4),
+    rgba(255, 255, 255, 0.9)
+  );
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle1 {
+  top: 2%;
+  right: 17%;
+}
+.circle2 {
+  bottom: 2%;
+  left: 15%;
+}
+
+.avatar {
+  height: 10rem;
+  width: 10rem;
+
+  border-radius: 50%;
+}
+img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 20%;
+
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+  fill: #0b7285;
+
+  stroke: #d9480f;
+}
+.dashboard {
+  flex: 1; /* tach roi 2 day */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; /* Tao khoang cach moi dong */
+  text-align: center;
+
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.9),
+    rgba(225, 225, 225, 0.3)
+  );
+  border-radius: 2rem;
+}
+
+.link {
+  display: flex;
+  /* margin: 2rem 0rem; */
+  padding: 1rem;
+  align-items: center;
+}
+
+.link h3 {
+  padding: 0rem 2rem;
+}
+.draws {
+  flex: 2;
+}
+
+.enjoy {
+  background: linear-gradient(to right top, #99e9f2, #e3fafc);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 1rem;
+  position: relative;
+}
+
+.enjoy-img {
+  width: 5rem;
+  height: 4rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  transform: rotate(20deg);
+}
+
+.enjoy h2 {
+  width: 40%; /* Cách đưa hình vào khung chữ*/
+}
+
+/* Cards  */
+
+.status {
+  margin-bottom: 3rem;
+}
+
+.status input {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.9),
+    rgba(225, 225, 225, 0.3)
+  );
+
+  border: none;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.draws {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+
+  text-align: justify;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.6),
+    rgba(225, 225, 225, 0.9)
+  );
+  margin-top: 2rem;
+  padding-right: 2rem;
+
+  border-radius: 2rem;
+  box-shadow: 6px 6px 20px rgb(56, 55, 55, 0.175);
+}
+
+.card-info {
+  margin-top: 1rem;
+}
+.progress {
+  margin-top: 10px;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(to right top, #99e9f2, #0c8599);
+  border-radius: 1rem;
+  overflow: hidden;
+
+  position: relative;
+}
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(216, 205, 205);
+  position: absolute;
+  left: 60%;
+}
+.percentage {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2rem;
+  background: linear-gradient(to right top, #99e9f2, #0c8599);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

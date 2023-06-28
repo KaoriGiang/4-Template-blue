@@ -1,0 +1,29 @@
+/* BELOW 2524px */
+@media (max-width: 159em) {
+  .container {
+    min-width: ３7vh;
+  }
+  .circle1 {
+    top: 2%;
+    right: 12%;
+  }
+  .circle2 {
+    bottom: 5%;
+    left: 13%;
+  }
+}
+
+/* BELOW 2268px */
+@media (max-width: ５4em) {
+  .container {
+    min-width: 157vh;
+  }
+  .circle1 {
+    top: 2%;
+    right: 12%;
+  }
+  .circle2 {
+    bottom: 5%;
+    left: 10%;
+  }
+}
