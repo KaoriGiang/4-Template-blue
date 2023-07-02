@@ -1,29 +1,174 @@
 /* BELOW 2524px */
-@media (max-width: 159em) {
+@media (max-width: 1200px) {
   .container {
-    min-width: ３7vh;
+    width: 65%;
   }
+  .circle1,
+  .circle2 {
+    height: 6rem;
+    width: 6rem;
+  }
+
   .circle1 {
-    top: 2%;
-    right: 12%;
+    top: 1%;
+    right: 16%;
   }
   .circle2 {
-    bottom: 5%;
-    left: 13%;
+    bottom: 2%;
+    left: 16%;
+  }
+
+  h2,
+  p,
+  .percentage {
+    color: #1098ad;
+    font-weight: 600;
+    opacity: 0.8;
+    font-size: 16px;
+  }
+
+  .enjoy {
+    margin: 1rem;
+  }
+
+  .enjoy-img {
+    width: 4rem;
+    height: 3rem;
+
+    top: 10%;
+    right: 2%;
+    transform: rotate(18deg);
+  }
+  .enjoy h2 {
+    width: 30%;
   }
 }
 
-/* BELOW 2268px */
-@media (max-width: ５4em) {
+/* BELOW 1000px */
+@media (max-width: 1000px) {
   .container {
-    min-width: 157vh;
+    width: 70%;
   }
+  .circle1,
+  .circle2 {
+    height: 6rem;
+    width: 6rem;
+  }
+
   .circle1 {
     top: 2%;
-    right: 12%;
+    right: 10%;
   }
   .circle2 {
-    bottom: 5%;
+    bottom: 2%;
     left: 10%;
+  }
+
+  .card-info {
+    margin-top: 1rem;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 80%;
+  }
+
+  .circle1 {
+    top: 2%;
+    right: 5%;
+  }
+  .circle2 {
+    bottom: 2%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin: 10px;
+    width: 90%;
+    min-height: auto;
+  }
+
+  .status input {
+    width: 80%;
+    height: 20%;
+  }
+
+  .status {
+    margin-bottom: 5px;
+  }
+  .draws {
+    margin: 10px;
+  }
+
+  .circle1,
+  .circle2 {
+    height: 5rem;
+    width: 5rem;
+  }
+  .circle1 {
+    top: 0.1%;
+    right: 1%;
+  }
+  .circle2 {
+    bottom: 2px;
+    left: 2%;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+
+    margin: 0;
+
+    margin: 0px 30px 8px;
+    padding: 0;
+  }
+
+  .card-info {
+    margin-top: 0rem;
+  }
+
+  .percentage {
+    width: auto;
+    margin: 0;
+    margin: 10px;
+  }
+
+  .progress {
+    height: 10%;
+  }
+  h2 {
+    letter-spacing: 3px; /* ---letter-spacing------ */
+  }
+  p,
+  .percentage {
+    color: #1098ad;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .card {
+    margin: 0px 8px 8px;
+  }
+  .status {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 }
